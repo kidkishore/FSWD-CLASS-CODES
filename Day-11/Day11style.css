@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(155, 250, 30);
+}
+#form{
+    position:absolute;
+    align-content: center;
+    background-color: aqua;
+    width:30vw;
+    height:45vh;
+    margin-left:35%;
+    top:27vh;
+    text-align: center;
+    border-radius:80px;
+    box-shadow: -10px 10px ;
+    font-size: large;
+}
+#form:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    rotate:3deg;
+    background-color: yellow;
+}
+#form ::placeholder{
+    font-size: large;
+    font-weight:bold;
+}
+#form input{
+    font-size: large;
+    font-weight: bolder;
+}

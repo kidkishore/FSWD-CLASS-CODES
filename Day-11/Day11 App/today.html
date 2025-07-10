@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label,input{
+            display: block;
+        }
+        span{
+            color: red;
+            background-color: black;
+        }
+        h1{
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+    <form  onsubmit="return submitForm()">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <span id="a1"></span>
+        <label for="number">Number</label>
+        <input type="number" id="number">
+        <span id="a2"></span>
+        <label for="mail">Email</label>
+        <input type="email" id="mail">
+        <span id="a3"></span>
+        <input type="submit">
+      
+    </form>
+    <script>
+        function submitForm(){
+           let name = document.getElementById("name").value;
+           let number = document.getElementById("number").value;
+           let email = document.getElementById("mail").value;
+           
+           if(name==""){
+               document.getElementById("a1").innerHTML="Enter the Name";
+               return false;
+           }
+           else{
+               document.getElementById("a1").innerHTML="";
+           }
+           if(email===""){
+               document.getElementById("a3").innerHTML="Enter the mail";
+               return false;
+           }
+           else{
+               document.getElementById("a3").innerHTML="";
+           }
+           if(number==""){
+               document.getElementById("a2").innerHTML="Enter the number"
+               return false;
+           }
+           else if(number==isNaN){
+               document.getElementById("a2").innerHTML="Enter the valid number"
+               return false;
+           }
+           else{
+                document.getElementById("a2").innerHTML="";
+           }
+           alert("Form submitted");
+           return true;
+           
+        }
+       </script>
+</body>
+
+</html>

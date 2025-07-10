@@ -1,0 +1,35 @@
+What is Git?: 
+
+A version control system to track changes in your code.
+
+Why use Git?: 
+
+Manage  different versions of projects, 
+Collaboration  
+And  Backup. 
+
+previus version code (7days ago) >>>>>>>> current version code.
+
+general file = clint.
+
+recover seiya nenaikkumbochu adhu eppandi recover aagudhendral create panni git la upload panna file 2ndu file aaga split aagum. andha file ie edit seiyumbodhu mine oruside and master oruside irukkum meendum save pannumbodhu idhu change aagum aanal edit panni message koduththedhu code udan seththu save aagum.
+
+
+
+first step go to the git and create an new repostery at you need name.
+
+next step go to the git bash and type an command at "git init".
+
+next change the directory at your uploading needed folder file location at using the command "cd folderLocation.".
+
+next add the any kind of you uploading file at using the "git add filename".
+
+next report the edited your name at using the following command at "git commit -m "Message"".
+
+next view the edited reports at usin the command "git log".
+
+next save the file at cloud using the command at "git remote origin and type the repostery url".
+
+next you have like to the change to master to new link type the following command at "git branch new".
+
+next upload to the link at cloud use the command at "git push -u origin new

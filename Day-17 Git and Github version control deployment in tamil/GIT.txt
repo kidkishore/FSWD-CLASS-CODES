@@ -1,0 +1,13 @@
+1.first create a git hub account and install the git bash in your computer
+
+2.next go to the github and create a new repostary and copy the repostary url
+
+3.next initialise the github for your git bash using the command "git init"
+
+4.next add you needed file at using the command "git add 'filenameandformat'.
+
+5.next commit your file at using the message command "git commit -m 'your message'"
+
+6.next upload your file at cloud first you have initialise the repostery of your github cloud at using the command "git remote origin 'your repostary https url'"
+
+7.next you have once inisialized your git hub repostary next you have upload your file at your repostary using the command at your git bash"git push -u master(or) you created repostery copy id"

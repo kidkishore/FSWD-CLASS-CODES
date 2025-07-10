@@ -1,0 +1,34 @@
+-----------------------------------------Today class is Create a Text to Speach converter website-------------------------------------------------
+1st identify the elements.
+
+the elements are first hesdding 1 tag inside text Text to as Speack.
+the second element is get to the text input tag.
+the threed element is clicking button at the last ending page and the button event is create a voice in to givened text.
+
+-----------------------oops cocepts-----------------
+class + objects + object + method
+
+classs=blueprint;
+object=copy;
+
+
+object-1{
+    name:bharani;
+    age:25;
+    class:
+}
+object-2{
+    name:bharani;
+    age:25;
+    class:
+}
+object-3{
+    name:bharani;
+    age:25;
+    class:
+}
+print();
+
+object1.print();
+
+method

@@ -1,0 +1,5 @@
+----------------------------------------------------------------------------Develop Form Validation page--------------------------------------------------------------------------
+isNaN = "Not a Number";
+form tag in behaviour anadhu submit koduththapiragu anaththum vegamaga refresh aagum adhanala kodukkura condition vegamaga display seinju refresh aagum.
+
+fuction activate aanapiragu return varumbofhu

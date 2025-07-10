@@ -1,0 +1,6 @@
+today build a language to speach application
+
+
+
+cb = callback function   ------> function name is googletranslateElementInit()
+translate element is a class = blue pint

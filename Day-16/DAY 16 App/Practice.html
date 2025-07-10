@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Attractive Website</title>
+    <style>
+        .main{
+            width: 40vw;
+            background-color: aqua;
+            margin-left: 30vw;
+            margin-right: 30vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .translate{
+            width: 10vw;
+            background-color: azure;
+            margin-right: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Translate API Script -->
+  <div class="main">
+    <h1>Login Form</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td> <input type="text" placeholder="Enter your Name"></td>
+            </tr>
+            <tr>
+                <td><label for="">Number</label></td>
+                <td><input type="number" placeholder="Enter your Number"></td>
+            </tr>
+            <tr>
+                <td><label for="">Email</label></td>
+                <td><input type="email" name="" id="" placeholder="Enter your Mail"></td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </table>
+        
+    </form>
+    <p id="demo"> </p>
+  </div>
+ 
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pagelanguage:'en'},'demo');
+        }
+    </script>
+
+</body>
+
+</html>

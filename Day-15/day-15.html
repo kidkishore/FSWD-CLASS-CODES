@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Randum User Generator</h1>
+<!-- it is used to store the randum user generated data -->
+            <div id="user"> </div>
+<!-- it is used to store the randum user generated data -->
+        <button onclick = "fetchData()">Get User</button>
+    </div>
+    <script>
+        let userContainer = document.getElementById('user').value;
+        async function fetchData() {
+         try{
+            let response = await fetch('https://randomuser.me/api/');
+            let data = await response.json();
+            let userData = data.results[0];
+            let image = userData.picture.large;
+            let name = `${userData.name.title} ${userData.name.first} ${userData.name.last}`;
+            userContainer.innerHTML = name;
+            userContainer.innerHTML = `<img src="${image}"><h1> ${name}<h1>`
+         } 
+         catch(err){
+            console.log(err);
+         }
+        }
+    </script>
+</body>
+</html>

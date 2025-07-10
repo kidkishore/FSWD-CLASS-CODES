@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day11</title>
+    <link rel="stylesheet" href="Day11style.css">
+</head>
+<body>
+    <form onsubmit="return submitForm()" id="form">
+        <label for="na">Name</label>
+        <br>
+        <input type="text" id="na" placeholder="Enter name">
+        <br>
+        <span id="a1" style="color:red"></span>
+        <br>
+        <label for="nu">Number:</label>
+        <br>
+        <input type="number" id="nu" placeholder="Enter number">
+        <br>
+        <span id="a2" style="color:red"></span>
+        <br>
+        <label for="ma">E-Mail:</label>
+        <br>
+        <input type="email" id="ma" placeholder="Enter email">
+        <br>
+        <span id="a3" style="color:red"></span>
+        <br>
+        <input type="submit" style="border-radius:32px;">
+    </form>
+    <script>
+        function submitForm(){
+            let name = document.getElementById('na').value;
+            let number = document.getElementById('nu').value;
+            let email = document.getElementById('ma').value;
+            
+            if(name==""){
+                document.getElementById('a1').innerHTML = "Kindly enter name";
+                return false;
+            }
+            else{
+                document.getElementById('a1').innerHTML = "";
+            }
+            if(number==""){
+                document.getElementById('a2').innerHTML = "Kindly enter number";
+                return false;
+            }
+            else{
+                document.getElementById('a2').innerHTML = "";
+            }
+            if(number == isNaN){
+                document.getElementById('a2').innerHTML = "Kindly enter a number type";
+                return false;
+            }
+            if(email==""){
+                document.getElementById('a3').innerHTML = "Kindly enter E-Mail";
+                return false;
+            }  
+            else{
+                document.getElementById('a3').innerHTML = "";
+            } 
+            alert("Form submitted");
+            return true;
+        }
+    </script>
+</body>
+</html>

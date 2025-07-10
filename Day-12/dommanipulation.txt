@@ -1,0 +1,5 @@
+DOM manipulation is Document object model
+
+DOM manipulation refers tothe process of dynamically changing the content ,structure ,or style of a web page
+
+By interacting with the Document Object Model (DOM) using javascript.

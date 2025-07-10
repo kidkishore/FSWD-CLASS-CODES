@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Name" id="n"></td>
+            </tr>
+            <tr></tr>
+                <td><input type="text" placeholder="Profile url" id="p"></td>
+            </tr>
+            <tr></tr>
+                <td><input type="text" placeholder="About" id="a"></td>
+            </tr>
+        </table>
+        <button onclick="update()">Submit</button>
+    </div>
+    <div>
+        <h1 id="h1">Name</h1>
+        <img src="https://images.hindustantimes.com/img/2022/07/23/1600x900/Suriya_1658583857413_1658583867813_1658583867813.jpg" alt="" id="img">
+        <h1 id="h2">About</h1>
+    </div>
+    <script>
+        function update(){
+           let name = document.getElementById("n").value;
+           document.getElementById("h1").innerHTML=name;
+           let url = document.getElementById("p").value;
+           document.getElementById("img").src=url;
+           let about = document.getElementById("a").value;
+           document.getElementById("h2").innerHTML=about;
+
+        }
+    </script>
+</body>
+</html>

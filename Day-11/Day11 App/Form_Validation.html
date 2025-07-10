@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Validation</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+
+
+.error {
+    color: #d9534f;
+    font-size: 14px;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Simple Form Validation</h1>
+    <form onsubmit="return validateForm()">
+      <label>Name:</label>
+      <input type="text" id="name" />
+      <span id="nameError" class="error"></span>
+      <label>Email:</label>
+      <input type="email" id="email" />
+      <span id="emailError" class="error"></span>
+      <input type="submit" value="SignUp" />
+    </form>
+
+    <script>
+        function validateForm(){
+            // Get inputs
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            // reset error messages
+            document.getElementById('nameError').innerHTML = '';
+            document.getElementById('emailError').innerHTML = '';
+
+            // validate name
+            if(name === ''){
+                document.getElementById('nameError').innerHTML = 'Name is required';
+                return false;
+            }
+
+            // validate email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(email === ''){
+                document.getElementById('emailError').innerHTML = 'Email is required';
+                return false;
+            } else if(!emailRegex.test(email)){
+                document.getElementById('emailError').innerHTML = 'Invalid email format';
+                return false;
+            }
+
+            return true; // form is valid
+        }
+    </script>
+  </body>
+</html>

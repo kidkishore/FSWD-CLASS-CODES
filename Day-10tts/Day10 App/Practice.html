@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+    }
+    .inputs{
+        width: 30%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(7, 7, 199);
+        align-items: center;
+        border-radius: 30px;
+        height: 50vh;
+        
+    }
+    .inputs input{
+        
+      font-size: large;
+        height: 30px;
+        width: 400px;
+        border-radius: 30px;
+        
+        
+    }
+    table td{
+        padding: 20px;
+    }
+    ::placeholder{
+       
+        
+        color: black;
+    }
+    .inputs button{
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        border-radius: 20px;
+    }
+    .profile{
+        width: 30%;
+        height: 50vh;
+        background-color: black;
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+    }
+    .profile img{
+        width: 50%;
+       height: 200px;
+        border: 5px solid white;
+        border-radius: 100px;
+    }
+    #button{
+        width: 100px;
+        height: 30px;
+        background-color: black;
+        color: white;
+        font-size: larger;
+        border-radius: 10px;
+    }
+    #button1{
+        width: 100px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        font-size: larger;
+        border-radius: 10px;
+        border: 2px black solid;
+    }
+</style>
+<body>
+    <div class="inputs">
+        <h1>Details</h1>
+        <table>
+            <tr>
+                <td><input type="text" placeholder="Name" id="n"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="i" placeholder="Profile url"></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id="a" placeholder="About"></td>
+            </tr>
+        </table>
+        <button id="b" onclick="submit()">Sumbit</button>
+    </div>
+    <div class="profile" id="profile">
+        <h1>Profile</h1>
+        <h1 id="Name"></h1>
+        <img src="" alt="" id="img">
+        <h1 id="about"></h1>
+    </div>
+    <div>
+        <button onclick="light()" id="button1">Light</button>
+        <button onclick="dark()" id="button">Dark</button>
+    </div>
+    
+</body>
+<script>
+    function submit(){
+        let Name = document.getElementById("n").value;
+        document.getElementById("Name").innerHTML=Name;
+        let src = document.getElementById("i").value;
+        document.getElementById("img").src= src;
+        let About = document.getElementById("a").value;
+        document.getElementById("about").innerHTML=About;
+    }
+    function dark(){
+        document.getElementById("profile").style.backgroundColor='black';
+        document.getElementById("profile").style.color='white';
+    }
+    function light(){
+        document.getElementById("profile").style.backgroundColor='white';
+        document.getElementById("profile").style.color='black';
+        document.getElementById("profile").style.border='4px black solid';
+    }
+   
+</script>
+</html>

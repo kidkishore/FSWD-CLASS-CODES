@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day12 DOM manipulate</title>
+</head>
+<body>
+    <form onsubmit="return setValue()">
+        <input type="text" placeholder="Enter your name" id="na">
+        <br>
+        <br>
+        <input type="number" placeholder="Enter your number" id="nu">
+        <br>
+        <br>
+        <input type="email" placeholder="Enter your email" id="ma">
+        <br>
+        <br>
+        <input type="submit" value="login">
+        <br>
+    </form>
+    <br>
+    <form onsubmit="return getValue()">
+        <input type="search" id="se">
+        <input type="submit">
+    </form>
+    <span id="data"></span>
+    <script>
+        function setValue(){
+            let userName = document.getElementById('na').value;
+            let userNumber = document.getElementById('nu').value;
+            let userEmail = document.getElementById('ma').value;
+            
+            localStorage.setItem('UserName', userName);
+            localStorage.setItem('UserNumber', userNumber);
+            localStorage.setItem('UserEmail', userEmail);
+            alert("Data saved successfully!");
+            console.log("Data saved successfully!");
+            return true;
+        }
+        function getvalue(){
+            let Search = document.getElementById('se').value;
+            let data = localStorage.getItem(Search);
+            document.getElementById('data').innerHTML = data;
+            alert("value got")
+            return false;
+        }   
+    </script>
+</body>
+</html>

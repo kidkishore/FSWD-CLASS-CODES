@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc </title>
+</head>
+<body>
+    <div class="from">
+        <h1>Login form</h1>
+        <form>
+            <label for="">Name</label>
+            <input type="text" placeholder="Enter Your Name." id="">
+            <label for="">Number</label>
+            <input type="text" placeholder="Enter Your Number.">
+            <label for="">E-mail</label>
+            <input type="text" placeholder="Enter Your Mail">
+            <button><b>Submit</b></button>
+        </form>
+       <style>
+            .from{
+                padding-left: 30px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+            }
+            form input{
+                width:400px;
+            }
+            button{
+                width:100px;
+            }
+        </style>
+    </div>
+    <div id="translator" style="top:50%; background-color: aqua;"> </div>
+        <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script>
+            function googleTranslateElementInit(){
+            new google.translate.TranslateElement({pagelanguage:'en'},'demo', 'translator');
+        }
+        </script>
+</body>
+</html>

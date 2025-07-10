@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Idcard{
+            constuctor(Name, Age, DOB){
+                this.name=Name;
+                this.age=Age;
+                this.dob=DOB;
+            }
+            printing(){
+                document.write(`Name is${this.name}, age is${this.age} and DOB is${this.dob}`);
+            }
+        }
+        let kishoreId = new Idcard("kishore" , 20 , "27/02/2005");
+        let aarthiId = new Idcard("arthi", 20 , "23/02/2005");
+        aarthiId.printing();
+        kishoreId.printing();
+    </script>
+</body>
+</html>

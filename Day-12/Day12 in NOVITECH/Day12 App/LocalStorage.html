@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: linear-gradient(to bottom right, #d3e0ea, #fff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            background-color: white;
+            width: 500px; /* Increased the form width */
+            padding: 50px; /* Increased padding */
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            font-size: 20px; /* Increased font size */
+            color: #333;
+            margin-bottom: 15px; /* Added more space */
+            display: block;
+        }
+        form input {
+            width: 100%;
+            padding: 15px; /* Increased padding */
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-bottom: 25px; /* Increased margin */
+            font-size: 18px; /* Increased font size */
+            outline: none;
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.05);
+        }
+        form button {
+            width: 100%;
+            padding: 15px; /* Increased button padding */
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px; /* Increased button font size */
+            cursor: pointer;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <label for="data1">First Name</label>
+        <input type="text" placeholder="Ex: Bharani" id="data1">
+        
+        <label for="data2">Second Name</label>
+        <input type="text" placeholder="Ex: Chandru" id="data2">
+        
+        <label for="data3">Email Address</label>
+        <input type="email" placeholder="Ex: chan@gmail.com" id="data3">
+        
+        <label for="data4">Password</label>
+        <input type="password" placeholder="Ex: ********" id="data4">
+        
+        <label for="data5">Date of Birth</label>
+        <input type="date" id="data5">
+        
+        <button type="button" onclick="get()">Submit</button>
+    </form>
+
+    <script>
+        function get() {
+            var a = document.getElementById("data1").value;
+            var b = document.getElementById("data2").value;
+            var c = document.getElementById("data3").value;
+            var d = document.getElementById("data4").value;
+            var e = document.getElementById("data5").value;
+
+            // Save to localStorage
+            localStorage.setItem("data1", a);
+            localStorage.setItem("data2", b);
+            localStorage.setItem("data3", c);
+            localStorage.setItem("data4", d);
+            localStorage.setItem("data5", e);
+
+            // Confirmation alert
+            alert("Data has been saved!");
+        }
+    </script>
+    
+</body>
+</html>

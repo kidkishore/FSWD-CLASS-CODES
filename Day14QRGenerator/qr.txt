@@ -1,0 +1,10 @@
+today class is generatable qr create in using html+css+javascript and hoops language.
+ 
+
+ backtick symbol  =====  esc and Tab center
+ backtick meaning is temolate.
+ it is javascript advanced.
+ creating steps.
+ class - blue print 
+ object - bharani, arthi, kannan,
+ method=backtick symbol.

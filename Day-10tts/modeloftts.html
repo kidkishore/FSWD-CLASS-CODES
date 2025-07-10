@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model of Text to Speach</title>
+</head>
+<body>
+    <div>
+        <input type="text" placeholder="enter your name" id="name">
+        <input type="text" placeholder="Enter img src" id="src">
+        <input type="text"placeholder="Enter Bio" id="bio">
+        <button onclick="updateBio()"><b>Submit</b></button>
+    </div>
+    <div>
+        <h1 id="h1">Name:</h1>
+        <img src="https://1000logos.net/wp-content/uploads/2021/10/Batman-Logo.png" style="width:300px; height:300px;" id="btman">
+        <h1 id="h2">Bio</h1>
+    </div>
+    <script>
+        function updateBio(){
+            let Name = document.getElementById('name').value;
+            let img = document.getElementById('src').value;
+            let bios = document.getElementById('bio').value;
+            document.getElementById('h1').innerHTML = Name;
+            document.getElementById('btman').src = img;
+            document.getElementById('h2').innerHTML = bios;    
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*{
+            margin:0px;
+        }
+        body{
+            margin:0px;
+        }
+        .main1 h1{
+            margin:0px;
+        }
+        .main1{
+            width:100vw;
+            height:10vh;
+            background-color:rgb(255, 0, 128);
+            position:relative;
+        }
+        .main11{
+            position:absolute;
+            top:50%;
+            left:25%;
+            color:white;
+            font-size: xx-large;
+            transform:translate(-50%,-50%);
+        }
+        .main2{
+            width:100vw;
+            height:80vh;
+            position:relative;
+        }
+        .m21 h1{
+            margin:0px;
+        }
+        .m21{
+            position:absolute;
+            top:100px;
+            left:100px;
+            color:white;
+            font-size: x-large;
+        }
+        .m22{
+            position:absolute;
+            left:100px;
+            top:300px;
+        }
+        .m22 button{
+            width:100px;
+            height:30px;
+            border-radius: 30px;
+            box-shadow: 10px -5px ;
+            background-color: rgb(228, 191, 28);
+            font-size:large;
+        }
+        .m23{
+            position:absolute;
+            right:100px;
+            top:74px;
+        }
+        .m24{
+            position:static;
+            top:40%;
+            right:10%;
+            color: rgb(39, 223, 48);
+            font-size: 10px;
+            display:none;
+        }
+        
+        .m23 img{
+            height:390px;
+            width:280px;
+            border-radius: 550px;
+        }
+        #im1{
+            width: 100%;
+            height: 100%;
+        }
+        .main3{
+            width:100vw;
+            height:10vh;
+            background-color:rgb(255, 0, 128);
+        }
+        #b1{
+            position:absolute;
+            top:20px;
+            left:80%;
+            background-color: rgb(255, 0, 128);
+            transition:all 0.5s;
+            border-radius: 30px;
+            box-shadow: 10px -5px ;
+        }
+        #b1:hover{
+            transform: scale(1.1);            
+        }
+        #ece{
+            position:absolute;
+            top:30vh;
+            width:20vw; 
+            height:30vh;
+            border-radius:50%;
+            left:50%;
+        }
+        #fswd{
+            position:absolute;
+            top:30vh;
+            width:20vw; 
+            height:30vh;
+            border-radius:50%;
+            left:78%;
+        }
+        #iot{
+            position:absolute;
+            top:3px;
+            width:20vw; 
+            height:30vh;
+            border-radius:50%;
+            left:64%;
+        }
+        .main3 footer{
+            position:absolute;
+            font-size:xx-large;
+            left:23%;
+            align-content: center;
+            top:92vh;
+        }

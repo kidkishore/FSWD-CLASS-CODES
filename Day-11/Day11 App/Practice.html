@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            padding: 20px;
+        }
+        label, input {
+            display: block;
+        }
+        span {
+            color: red;
+        }
+        input[type="text"],input[type="number"],input[type="email"],input[type="submit"]{
+           width: 250px;
+           margin-bottom: 15px;
+           font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="return submitForm()">
+        <label for="n">Name</label>
+        <input type="text" id="n">
+        <span id="alert1"></span>
+
+        <label for="e">Email</label>
+        <input type="email" id="e">
+        <span id="alert2"></span>
+
+        <label for="nu">Number</label>
+        <input type="number" id="nu">
+        <span id="alert3"></span>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+       function submitForm(){ 
+        let Name = document.getElementById("n").value;
+        let mail = document.getElementById("e").value;
+        let number = document.getElementById("nu").value;
+
+        // Name validation
+        if(Name == ""){
+            document.getElementById("alert1").innerHTML = "Name is required";
+            return false; // Prevent form submission
+        } else {
+            document.getElementById("alert1").innerHTML = ""; // Clear error if valid
+        }
+        
+        // Email validation
+        if(mail == ""){
+            document.getElementById("alert2").innerHTML = "Email is required";
+            return false; // Prevent form submission
+        } else {
+            document.getElementById("alert2").innerHTML = ""; // Clear error if valid
+        }
+
+        // Number validation
+        if(number == ""){
+            document.getElementById("alert3").innerHTML = "Number is required";
+            return false; // Prevent form submission
+        } else if (isNaN(number) || number <= 0) {
+            document.getElementById("alert3").innerHTML = "Enter a valid number";
+            return false; // Prevent form submission
+        } else {
+            document.getElementById("alert3").innerHTML = ""; // Clear error if valid
+        }
+
+        alert("Form submitted successfully");
+        return true; // Allow form submission if all validations pass
+       }
+    </script>
+</body>
+</html>

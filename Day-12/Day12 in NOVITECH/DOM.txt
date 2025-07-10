@@ -1,0 +1,108 @@
+getElementById() – Selects an element by its ID.
+
+getElementsByClassName() – Selects elements by class name.
+
+getElementsByTagName() – Selects elements by tag name.
+
+querySelector() – Selects the first element matching a CSS selector.
+
+querySelectorAll() – Selects all elements matching a CSS selector.
+
+innerHTML – Gets or sets HTML content of an element.
+
+textContent – Gets or sets text content of an element.
+
+setAttribute() – Adds or changes an element's attribute.
+
+getAttribute() – Retrieves the value of an attribute.
+
+removeAttribute() – Removes an attribute from an element.
+
+classList.add() – Adds a class to an element.
+
+classList.remove() – Removes a class from an element.
+
+classList.toggle() – Toggles a class on/off for an element.
+
+style – Directly changes the inline style of an element.
+
+createElement() – Creates a new HTML element.
+
+appendChild() – Appends a child element to a parent.
+
+removeChild() – Removes a child element from a parent.
+
+replaceChild() – Replaces an existing child with a new one.
+
+insertBefore() – Inserts a new element before another.
+
+parentNode – Accesses the parent of an element.
+
+childNodes – Returns a NodeList of child nodes.
+
+firstChild / lastChild – Gets the first/last child node.
+
+nextSibling / previousSibling – Gets the next/previous sibling node.
+
+firstElementChild / lastElementChild – Gets the first/last child element.
+
+nextElementSibling / previousElementSibling – Gets the next/previous sibling element.
+
+closest() – Finds the closest ancestor matching a selector.
+
+addEventListener() – Adds an event listener to an element.
+
+removeEventListener() – Removes an event listener from an element.
+
+offsetHeight / offsetWidth – Gets the height/width of an element (with padding/border).
+
+clientHeight / clientWidth – Gets the height/width of an element (without border/scrollbar).
+
+scrollHeight / scrollWidth – Gets the full scrollable height/width of an element.
+
+getBoundingClientRect() – Gets the element's size and position relative to the viewport.
+
+animate() – Animates an element using keyframes.
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+document.getElementById("myId");
+document.getElementsByClassName("myClass");
+document.getElementsByTagName("div");
+document.querySelector(".myClass");
+document.querySelectorAll(".myClass");
+document.getElementById("myId").innerHTML = "Hello, World!";
+document.getElementById("myId").textContent = "Text content";
+document.getElementById("myId").setAttribute("type", "button");
+document.getElementById("myId").getAttribute("type");
+document.getElementById("myId").removeAttribute("type");
+document.getElementById("myId").classList.add("newClass");
+document.getElementById("myId").classList.remove("oldClass");
+document.getElementById("myId").classList.toggle("active");
+document.getElementById("myId").style.color = "blue";
+document.createElement("div");
+document.getElementById("parent").appendChild(document.createElement("div"));
+document.getElementById("parent").removeChild(document.getElementById("child"));
+document.getElementById("parent").replaceChild(newChild, oldChild);
+document.getElementById("parent").insertBefore(newChild, existingChild);
+document.getElementById("child").parentNode;
+document.getElementById("parent").childNodes;
+document.getElementById("parent").firstChild;
+document.getElementById("parent").lastChild;
+document.getElementById("parent").nextSibling;
+document.getElementById("parent").previousSibling;
+document.getElementById("parent").firstElementChild;
+document.getElementById("parent").lastElementChild;
+document.getElementById("parent").nextElementSibling;
+document.getElementById("parent").previousElementSibling;
+document.getElementById("child").closest(".parentClass");
+document.getElementById("myId").addEventListener("click", function(){ alert('Clicked!'); });
+document.getElementById("myId").removeEventListener("click", myFunction);
+document.getElementById("myId").offsetHeight;
+document.getElementById("myId").clientHeight;
+document.getElementById("myId").scrollHeight;
+document.getElementById("myId").getBoundingClientRect();
+document.getElementById("myId").animate([{ opacity: 0 }, { opacity: 1 }], { duration: 1000 });
