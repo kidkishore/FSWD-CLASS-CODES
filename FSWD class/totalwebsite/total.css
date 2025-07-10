@@ -1,0 +1,342 @@
+body{
+    margin:0px;
+}
+.main1{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    background-color: silver;
+    display: block;
+}
+.sub1{
+    position:absolute;
+    width:100%;
+    height:10%;
+    background-color:aqua;
+}
+.sub1 h1{
+    margin:0px;
+    position: absolute;
+    left:13%;
+    top: 10px;
+    box-shadow: 0px 3px green;
+}
+.sub1 button{
+    position:relative;
+    left:80%;
+    top:14px;
+    width:60px;
+    height:34px;
+    border-radius: 15px;
+    background-color:rgb(94, 11, 11);
+    color: white;
+    box-shadow: 6px -7px;
+}
+.sub1 button:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: red;
+}
+.sub2{
+    position:relative;
+    top:90vh;
+    width:100vw;
+    height:10vh;
+    margin:0px;
+    text-align: center;
+    align-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-color: darkseagreen;
+}
+
+.main2{
+    display: block;
+}
+/* it is desltop and laptop option selecting section */
+#pcimg{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17%;
+    border:3px double green;
+    left:50px;
+    display:block;
+}
+#pcimg:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+#lapimg{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17.5%;
+    border:3px double green;
+    left:60%;
+    display:block;
+}
+#lapimg:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+/* this is buttons have the choose have desktops and laptops option */
+#PCB{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:14.9%;
+    border-radius:12px;
+    color:rgb(219, 18, 18);
+    background-color: rgb(32, 143, 218);
+    display:block;
+}
+#PCB:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(145, 255, 0);
+}
+
+#LPB{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:70.9%;
+    border-radius:12px;
+    color:rgb(219, 18, 18);
+    background-color: rgb(32, 143, 218);
+    display:block;
+}
+#LPB:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(145, 255, 0);
+    
+}
+
+/* it is old pc or new pc selecting section */
+
+#oldpc{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17%;
+    border:3px double green;
+    left:50px;
+    display:none;
+}
+#oldpc:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+#newpc{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17.5%;
+    border:3px double green;
+    left:60%;
+    display:none;
+}
+#newpc:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+/* it is selecting button options to have old pc or new pc */
+
+#opb{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:14.9%;
+    border-radius:12px;
+    color:rgb(219, 18, 18);
+    background-color: rgb(32, 143, 218);
+    display:none;
+}
+#opb:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(145, 255, 0);
+}
+
+#npb{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:70.9%;
+    border-radius:12px;
+    color:rgb(219, 18, 18);
+    background-color: rgb(32, 143, 218);
+    display:none;
+}
+#npb:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(145, 255, 0);
+    
+}
+
+/* it is old laptop or new laptop buying section in button*/
+
+#oldlap{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:14.9%;
+    border-radius:12px;
+    color:rgb(251, 255, 27);
+    background-color: rgb(248, 31, 237);
+    display:none;
+}
+#oldlap:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(238, 86, 26);
+}
+
+#newlap{
+    position:absolute;
+    top:80%;
+    width:120px;
+    height:30px;
+    left:70.9%;
+    border-radius:12px;
+    color:rgb(37, 34, 223);
+    background-color: rgb(25, 241, 36);
+    display:none;
+}
+#newlap:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(238, 60, 128);
+    
+}
+
+/* it is viewing in the old laptops or new laptops section in image */
+
+#oldlapimg{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17%;
+    border:3px double green;
+    left:50px;
+    display:none;
+}
+#oldlapimg:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+#newlapimg{
+    position:absolute;
+    width:30%;
+    height: 58%;
+    border-radius: 14%;
+    top:17.5%;
+    border:3px double green;
+    left:60%;
+    display:none;
+}
+#newlapimg:hover{
+    transform:scale(1.1);
+    transition:all 0.5s;
+    background-color: rgb(217, 255, 0);
+}
+
+/* it is return button from the desktop section */
+
+#PCR{
+    position:absolute;
+    width:70px;
+    height:30px;
+    top:13vh;
+    left:90%;
+    border: 3px dotted yellow;
+    border-radius: 30px;
+    background-color: red;
+    color: aqua;
+    display:none;
+}
+#PCR:hover{
+    transform: scale(1.1);
+    box-shadow: 7px -8px crimson;
+}
+
+/* this is laptop return button */
+
+#LAPR{
+    position:absolute;
+    width:70px;
+    height:30px;
+    top:13vh;
+    left:90%;
+    border: 3px dotted yellow;
+    border-radius: 30px;
+    background-color: red;
+    color: aqua;
+    display: none;
+}
+#LAPR:hover{
+    transform: scale(1.1);
+    box-shadow: 7px -8px crimson;
+}
+.main2{
+    display: block;
+}
+.main3{
+    display: block;
+}
+
+/* form styles */
+#Dorm{
+        position:absolute;
+        margin:0px;
+        width:52%;
+        height:93%;
+        align-content: center;
+        left:24%;
+        top:1%;
+        font-size: xx-large;
+        border:8px dotted deeppink;
+        padding-left: 3%;
+        background-color: orange;
+        border-radius:15px;
+        display:none;
+    }
+    #Dorm input{
+        margin-top:5%;
+        width:164%;
+        height:40px;
+        font-size: large;
+    }
+    #Dorm:hover{
+        transform: scale(1.1);
+        transition:all 0.5s;
+        rotate: -3deg;
+        border-radius:30px;
+    }
+    form{
+        margin:0px;
+    }
+    

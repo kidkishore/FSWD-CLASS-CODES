@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overview of javascript</title>
+    <link rel="stylesheet" href="ovofjava.css">
+</head>
+<body>
+    <h1 id="h1">Is java script is easy?</h1>
+    <button id="b1">yes </button>
+    <button id="b2">no</button>
+    <script>
+        let a="yes it is easy";
+        let b="No if you not practice it will be difficult";
+        document.getElementById("b1").onclick = function(){
+            document.getElementById("h1").innerHTML = a;
+        }
+        document.getElementById("b2").onclick = function(){
+            document.getElementById("h1").innerHTML = b;
+        }
+    </script> 
+</body>
+</html>

@@ -1,0 +1,32 @@
+Today Task = Add CSS with HTML file
+
+type in the css in HTML
+
+1.Inline CSS = With in the html tag
+
+EX: <header style="background-color:blueviolet">Novians</header> 
+
+2.Internal CSS = With in a html file(use style tag)
+EX: </head>
+
+    <style>
+        h1{
+            background-color:brown;
+          }
+    </style>
+
+    <body>
+
+Types of the selectors in the css?
+1.type selector = dicluration:"tag name{}+anglar paranthisis"
+2.class selectors = dicluration:"<any tag+class=(user defined name)></any tag>
+3.id selector = dicluration:"<any tag+id=(user defined id name)></any tag>
+
+
+
+Important notes ennanna display flex ena kodukkumbodhu adhu endha modella display agannumnu sollanum. adhanala adhe tagla stylekkuklla flex-direction : column enakkodukkumbodhu adhu column modella alain aagum. adhanai centerla konduvara align item center enbadhai andha tagen css filela kodukkanum. 
+
+Important no-02 notes ennana oru multiple item galai sariyaga alain panna mudhalil displayla flex enakkoduthu adhana edayil space kodukka justify content enakkoduththu adharkku space evenly enakkodukkavum.
+
+
+Hoveting = mitavai hovering aagumbodhu element mela transform enbadhai andha total contentin divition udan hover seidhu 

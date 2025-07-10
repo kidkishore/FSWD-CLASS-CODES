@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our website</title>
+</head>
+
+<style>
+    .bag{
+        width:20vw;
+        border: 3px dodgerblue
+        dotted;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.5s ease-in-out;
+    }
+    .bag img{
+        width:15vw;
+        height:33vh;
+        border-radius: 30px;
+    }
+    #car{
+        display:flex;
+        justify-content: space-evenly;
+    }
+    header{
+        background-color: dodgerblue;
+        font-size: 70px;
+        color:white;
+        text-align:center;
+    }
+    footer{
+        background-color: dodgerblue;
+        font-size: 70px;
+        color:white;
+        text-align:center;
+    }
+    #car:hover .bag{
+        transform: scale(0.8);
+    }
+    #car .bag:hover{
+        transform: scale(1.1) rotate(5deg);
+        background-color: yellow;
+        border:3px solid;
+        box-shadow: 10px 10px gray;
+    }
+</style>
+
+<body>
+    <header>Novians</header>
+    <br>
+    <br>
+   <div id="car">
+     <div class="bag">
+        <h1>Category</h1>
+        <h1></h1>
+        <img src="students.jpg" alt="">
+        <h1>Students</h1>
+    </div>
+
+     <div class="bag">
+        <h1>Category</h1>
+        <h1></h1>
+        <img src="students.jpg" alt="">
+        <h1>Students</h1>
+    </div>
+
+     <div class="bag">
+        <h1>Category</h1>
+        <h1></h1>
+        <img src="students.jpg" alt="">
+        <h1>Students</h1>
+    </div>
+     <div class="bag">
+        <h1>Category</h1>
+        <h1></h1>
+        <img src="students.jpg" alt="">
+        <h1>Students</h1>
+    </div>
+    
+    </div>
+   </div>
+   <br>
+    <footer>success@novians.com</footer>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCG Computers</title>
+    <link rel="stylesheet" href="total.css">
+    <script src="total.js"></script>
+</head>
+<body>
+    
+    
+    <div class="main1">
+        <div class="sub1">
+            <h1>Welcome to the SCG Desktops and Laptops sales and services</h1>
+            <button onclick="rt()">Home</button>
+            <button>About</button>
+            <button onclick="loginForm()">Login</button>
+            <button>contact</button>
+        </div>
+        <div class="sub2">
+            <footer>Contact:7418886223, 7418066223, 9094886559, 7845333134.</footer>
+        </div>
+        <div class="sub3">
+            <img src="desktop (2).jpg" id="pcimg">
+            <button id="PCB" onclick ="cd()">Desktops</button>
+            <img src="laptop.webp" id="lapimg">
+            <button id="LPB"  onclick = "ls()">Laptops</button>
+        </div>
+    </div>
+
+
+    <div class="main2">
+        <img src="oldpc.avif" id="oldpc">
+        <button id="opb">Old Desktops</button>
+        <img src="pcimg.avif" id="newpc">
+        <button id="npb">NewDesktops</button>
+        <button id="PCR" onclick = "drt()">Return</button>
+    </div>
+    
+    
+    <div class="main3">
+        <img src="oldlaptop.jpg" id="oldlapimg">
+        <button id="oldlap">Old Laptops</button>
+        <img src="newlap.jpg" id="newlapimg">
+        <button id="newlap">New Laptops</button>
+        <button id="LAPR" onclick="lrt()">Return</button>
+    </div>
+    
+    
+    <div class="login" onsubmit="return check()">
+<form id="Dorm">
+        <table>
+            <tr>
+                <td>Name:</td> <td><input id="na" type="text" placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td><span id="nas" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td> 
+            </tr>
+            <tr>
+                <td>Age:</td> <td><input id="Age" type="text" placeholder="Enter your Age"></td> <br> 
+            </tr>
+            <tr>
+                <td><span id="ages" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td>
+            </tr>
+            <tr>
+                <td>Gender:</td> <td><input id="gen" type="text" placeholder="Enter your Gender"></td>
+            </tr>
+            <tr>
+                <td><span id="gens" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td>
+            </tr>
+            <tr>
+                <td>Contact No:</td> <td><input id="ph" type="number" placeholder="Enter Your Phone Number"></td>
+            </tr>
+            <tr>
+                <td><span id="phs" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td>
+            </tr>
+            <tr>
+                <td>Address:</td> <td><input id="plc" type="text" placeholder="Enter Your Address"></td> 
+            </tr>
+            <tr>
+                <td><span id="ads" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td>
+            </tr>
+            <tr>
+                <td>E-Mail:</td> <td><input id="ma" type="text" placeholder="Enter Your E-Mail id"></td>
+            </tr>
+            <tr>
+                <td><span id="mails" style="position:absolute; color:red; font-size: 30px; left:20%;"></span></td>
+            </tr>
+            <tr>
+                <td>Password:</td> <td><input type="number" id="psw" placeholder="Enter your Id Password"></td>
+            </tr>
+            <tr>
+                <td><span id="psws" style="color:red; font-size:30px; left:20%;"></span></td>
+            </tr>
+        </table>
+        <input type="submit" style="position:absolute; width:160px; left:50%; top:79vh; border-radius: 15px; background-color: rgb(233, 233, 47); color:rgb(121, 44, 245);">
+    </form>
+    </div>
+
+
+</body>
+</html>

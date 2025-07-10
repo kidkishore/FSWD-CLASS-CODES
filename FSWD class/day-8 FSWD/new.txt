@@ -1,0 +1,17 @@
+IT IS FIRST METHODE OF BUTTON DICLURING IN THE JAVASCRIPT
+        document.getElementById("b1").onclick = function(){
+            document.getElementById("h1").innerHTML = "yes iti is easy";
+        }
+        document.getElementById("b2").onclick = function(){
+            document.getElementById("h1").innerHTML = "No if you not practice it will be difficult";
+        }
+
+IT IS THE SECOND METHODE OF THE BUTTUN DICLURING AT THE JAVASCRIPT
+let a="yes iti is easy";
+        let b="No if you not practice it will be difficult";
+        document.getElementById("b1").onclick = function(){
+            document.getElementById("h1").innerHTML = a;
+        }
+        document.getElementById("b2").onclick = function(){
+            document.getElementById("h1").innerHTML = b;
+        }

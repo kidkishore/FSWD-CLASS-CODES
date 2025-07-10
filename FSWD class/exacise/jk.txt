@@ -1,0 +1,55 @@
+<ul id="intern"></ul>
+
+
+
+
+
+
+<table id="intern">
+        <tr>
+            <td><h2 id="in1" style="display: block;"></h2></td>
+        </tr>
+        <tr>
+             <td id="in2" style="display: block;">The  at 21/12/2024 to 22/02/2025 was Three months.</td>
+        </tr>
+        <tr>
+            <td id="in3" style="display: block;">The BSNL Networking Engineer Training attended at 15/06/2024 to 14/08/2024 was One month.</td>
+        </tr>
+        <tr>
+            <td id="in4" style="display: none;">the IOT Online One month internship attended at 14/05/2024 to 15/06/2024</td>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><h3 id="ed1" style="display: block;">Education Qualifications:</h3></td> <span id="hede"></span> <br>
+        </tr>
+        <tr>
+            <td id="ed2" style="display: block;">Diploma in ECE in Central Polytecnic Collage. Completed in:28/04/2025</td> <span id="b1"></span>
+        </tr>
+        <tr>
+            <td id="ed3" style="display: block;">12th completed in Walter Scudder Hr.Sec.School in thindivanam.</td> <span id="b2"></span>
+        </tr>
+        <tr>
+            <td id="ed4" style="display: block;">10th completd in Walter Scudder Hr.Sec.School in thindivanam.</td> <span id="b3"></span>
+        </tr>
+        <tr>
+            <span id="b4"></span>
+        </tr>
+        <tr>
+            <td><br></td>
+        </tr>
+        <tr>
+            <td><h3 id="dt1" style="display: block;">My Details:</h3></td>
+        </tr>
+        <tr>
+            <td id="dt2" style="display: block;">Name:J. Kishore</td>
+        </tr>
+        <tr>
+            <td id="dt3" style="display: block;">DOB:27/02/2005</td>
+        </tr>
+        <tr>
+            <td id="dt4" style="display: block;">Address: No-03/01,Appasamy Gardern 2nd Street, Chennai: 600-081</td>
+        </tr>
+    </table>
+    
